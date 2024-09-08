@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+</head>
+<body>
+
+<h1>Анкета студента</h1>
+
+<form action="questionnaire.html" method="get" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Особисті дані</legend>
+
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required tabindex="1"><br><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Введіть пароль" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Мінімум 6 символів, одна велика літера, одна маленька літера та одна цифра" tabindex="2"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Введіть ваш email" autocomplete="off" required tabindex="3"><br><br>
+
+        <label for="tel">Мобільний телефон:</label>
+        <input type="tel" id="tel" name="tel" placeholder="+380XXXXXXXXX" required pattern="^\+380\d{9}$" title="Формат: +380XXXXXXXXX" tabindex="4"><br><br>
+
+        <label for="date">Дата народження:</label>
+        <input type="date" id="date" name="date" required tabindex="5"><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Вибір варіантів</legend>
+
+        <p>Стать:</p>
+        <label><input type="radio" name="gender" value="male" required tabindex="6"> Чоловіча</label>
+        <label><input type="radio" name="gender" value="female" tabindex="7"> Жіноча</label>
+        <label><input type="radio" name="gender" value="other" tabindex="8"> Інша</label><br><br>
+
+        <p>Ступінь освіти:</p>
+        <label><input type="radio" name="education" value="bachelor" tabindex="9"> Бакалавр</label>
+        <label><input type="radio" name="education" value="master" checked tabindex="10"> Магістр</label>
+        <label><input type="radio" name="education" value="phd" tabindex="11"> Доктор філософії</label><br><br>
+
+        <p>Інтереси:</p>
+        <label><input type="checkbox" name="interests" value="programming" tabindex="12"> Програмування</label>
+        <label><input type="checkbox" name="interests" value="sports" tabindex="13"> Спорт</label>
+        <label><input type="checkbox" name="interests" value="music" tabindex="14"> Музика</label>
+        <label><input type="checkbox" name="interests" value="travel" tabindex="15"> Подорожі</label><br><br>
+
+        <label for="course">Оберіть курс:</label>
+        <select id="course" name="course" tabindex="16">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript" selected>JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+        </select><br><br>
+
+        <label for="languages">Оберіть мови програмування:</label>
+        <select id="languages" name="languages" multiple tabindex="17">
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+            <option value="java">Java</option>
+            <option value="c++">C++</option>
+            <option value="ruby">Ruby</option>
+            <option value="php">PHP</option>
+        </select><br><br>
+
+        <label for="specialization">Спеціалізація:</label>
+        <select id="specialization" name="specialization" tabindex="18">
+            <optgroup label="Front-End">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </optgroup>
+            <optgroup label="Back-End">
+                <option value="nodejs">Node.js</option>
+                <option value="python">Python</option>
+                <option value="ruby">Ruby</option>
+            </optgroup>
+            <optgroup label="Full-Stack">
+                <option value="fullstack1">Full-Stack Developer 1</option>
+                <option value="fullstack2">Full-Stack Developer 2</option>
+                <option value="fullstack3">Full-Stack Developer 3</option>
+            </optgroup>
+        </select><br><br>
+
+        <label for="browser">Оберіть ваш браузер:</label>
+        <input list="browsers" id="browser" name="browser" tabindex="19">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+            <option value="Opera">
+        </datalist><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Додаткові дії</legend>
+
+        <label for="files">Завантажити аудіо файли:</label>
+        <input type="file" id="files" name="files" accept="audio/*" multiple tabindex="20"><br><br>
+
+        <button type="submit" tabindex="21">Надіслати</button>
+        <button type="reset" tabindex="22">Скинути</button>
+    </fieldset>
+</form>
+
+</body>
+</html>
