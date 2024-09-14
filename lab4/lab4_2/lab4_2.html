@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/lab4_2/style.css">
+
+    <title>lab4_2</title>
+</head>
+<body>
+    <header>Лабораторна робота №1.<br>
+        Git та GitHub. Linux, Command Line
+    </header>
+
+    <div class = "meta">
+        <b>Мета:</b> Ознайомитись з основними концепціями та інструментами систем контролю
+        версій Git та платформи GitHub, а також навчитися ефективно використовувати їх
+        для керування кодом та спільної розробки
+    </div>
+    <div class = "table1">
+        <b>Вимоги та самостійна робота: </b>
+        <ul>
+            <li>Зареєструвати акаунт на <a href="https://github.com/">https://github.com/</a> </li>
+            <li>Розібратись з <a href="https://pages.github.com/">https://pages.github.com/</a> </li>
+            <li>Оcнови git <a href="https://devzone.org.ua/post/git-za-30-khvylyn">https://devzone.org.ua/post/git-za-30-khvylyn</a> </li>
+            <li>Закріпити свої знання про git <a href="https://devzone.org.ua/post/git-za-30-khvylyn">https://devzone.org.ua/post/git-za-30-khvylyn</a> </li>
+        </ul>
+    </div>
+    <div id="zagolovok">
+        Практичні завдання:
+    </div>
+
+    <p>Завдання 1. </p>
+        <div class = 'task1'>
+            <ol>
+                <li>Пройдіть курс <a href="https://githowto.com/>">https://githowto.com/ </a> </li>
+            </ol>
+        </div>
+    <p>Завдання 2. </p>
+        <div class = "task2">
+            <ol>
+                <li>Пройдіть усі рівні тут <a href="https://learngitbranching.js.org/">https://learngitbranching.js.org/</a></li>
+                <li>Зробіть скріншот своїх завершених завдань.
+                </li>
+            </ol>
+        </div>
+    <p>Завдання 3. </p>
+        <div>
+            <ol>
+                <li>Створіть репозиторій та назвіть його web-technologies.</li>
+                <li>Створіть README.md для репозиторію.</li>
+                <li>Опишіть свої враження від вивченого матеріалу у README.md (що для вас
+                    було новим, що вас здивувало, що ви плануєте використовувати в
+                    майбутньому).</li>
+                <li>Надішліть pull-request сюди <a href="https://github.com/Computer-Science-Department-ChNU/git-learning">
+                    https://github.com/Computer-Science-Department-ChNU/git-learning</a>
+                    пропонуючи зміни.
+                </li>
+            </ol>
+        </div>
+    <p>Як зробити pull-request. </p>
+    <div class="pullRequest">
+        <ol>
+            <li>Форкніть репозиторій <a href="https://github.com/Computer-Science-Department-ChNU/git-learning">https://github.com/Computer-Science-Department-ChNU/git-learning
+                через
+                GitHub web-interface.</a>
+            </li>
+            <li>Клонуйте <b>свій</b> форк локально на свій комп'ютер: <b><i>git clone
+                https://github.com/Computer-Science-Department-ChNU/git-learning.git</i></b></li>
+            <li>Додайте репозиторій <a href="https://github.com/Computer-Science-Department-ChNU/git-learning">https://github.com/Computer-Science-Department-ChNU/git-learning</a>
+                як
+                upstream:
+                <i><b>git remote add upstream
+                    https://github.com/Computer-Science-Department-ChNU/git-learning.git.</b></i>
+            </li>
+            <li>Перейдіть до гілки main (<i><b>git checkout main</b></i>) і потім створіть нову гілку, ім'я
+                на ваш роздум (aka feature branch): <b><i>git checkout -b BRANCH_NAME.</i></b>
+            </li>
+            <li>Внесіть деякі зміни до свого локального сховища. Це може бути що
+                завгодно, насправді. Якщо ви знайшли помилку в README - чудово!
+                Подбайте про те, щоб дати своєму PR значуще (осмислене) ім’я та опис.
+            </li>
+            <li> Внесіть зміни до новоствореної гілки (<i><b>git commit -m "Your commit
+                message"</b></i>).
+            </li>
+            <li>Перейдіть до гілки main: <i><b>git checkout main</b></i>.
+            </li>
+            <li>Витягніть останні зміни з гілки upstream main:<i><b> git pull upstream main</b></i></li>
+            <li>Об’єднайте головну гілку зі своєю гілкою:<i><b> git checkout BRANCH_NAME &&
+                git merge main</b></i>.
+            </li>
+            <li>Вирішіть будь-які конфлікти мержу, якщо такі є (Resolve merge conflicts).</li>
+            <li>Надішліть гілку до вашого віддаленого сховища: <i><b>git push --set-upstream
+                origin BRANCH_NAME</b></i>
+            </li>
+            <li>.Зробіть pull-request з вашого репозиторію до репозиторію
+                <a href="https://github.com/Computer-Science-Department-ChNU/git-learning">
+                    https://github.com/Computer-Science-Department-ChNU/git-learning
+                </a> через
+                GitHub web-interface.
+            </li>
+            <li>Якщо вас попросять виправити merge конфлікт, зверніться до додаткових
+                матеріалів для отримання відповідної інформації.
+            </li>
+            <li>Зауважте, що ваш PR можуть не розглянути швидко.
+            </li>
+        </ol>
+    </div>
+    <p>Завдання 4. </p>
+        <div>
+            <ol>
+                <li>Пройдіть всі модулі (4 modules)
+                    <a href="https://linuxsurvival.com/linux-tutorial-introduction/">
+                        https://linuxsurvival.com/linux-tutorial-introduction/</a></li>
+                <li>Зробіть скріншот своїх завершених модулів і помістіть скріншот в теку
+                    task_linux_cli вашого репо <b><i>web-technologies.</i></b></li>
+            </ol>
+        </div>
+
+    <div class = "prymitka">
+        <b>Примітка для користувачів Windows:</b> Цей курс забезпечує віртуальне
+        середовище для введення команд. Однак, якщо ви хочете пізніше використовувати
+        ці команди на практиці, вам потрібно буде працювати з Linux CLI, оскільки багато
+        команд не підтримуються Windows cmd або PowerShell. Ви повинні вже встановити
+        git з https://git-scm.com/downloads. Він пропонує Git Bash, який можна
+        використовувати для введення команд bash.
+    </div>
+    <div class="materials">
+        <b>Додаткові матеріали.</b><br>
+        Вивчіть додаткові матеріали нижче, щоб покращити свої навички. Якщо ви
+        вважаєте, що це вплине на вашу загальну ефективність курсу, подумайте над тим,
+        щоб повернутись до них пізніше, наприклад коли ви виконаєте всі обов’язкові
+        завдання:
+        <ol>
+            <li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts">
+                https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts
+            </a></li>
+            <li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line">https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line</a></li>
+            <li><a href="https://ohshitgit.com/">https://ohshitgit.com/</a></li>
+            <li><a href="https://github.com/k88hudson/git-flight-rules">https://github.com/k88hudson/git-flight-rules</a></li>
+            <li><a href="https://skills.github.com/">https://skills.github.com/</a></li>
+        </ol>
+    </div>
+    <div class = "questions">
+        <b>Контрольні запитання: </b>
+        <ol>
+            <li>Що таке коміт у Git і які основні компоненти він містить?</li>
+            <li>Як створити нову гілку у локальному репозиторії Git і переключитися на неї?</li>
+            <li>Яка команда використовується для синхронізації локального репозиторію з
+                віддаленим репозиторієм на GitHub?
+            </li>
+            <li> Що таке pull request (PR) і які його основні цілі при роботі з GitHub?
+            </li>
+            <li>Як вирішити конфлікти при злитті гілок у Git?
+            </li>
+            <li>Що таке форк репозиторію і як він використовується в контексті GitHub?</li>
+            <li> Як можна переглянути історію комітів у Git?</li>
+        </ol>
+    </div>
+</body>
+</html>
