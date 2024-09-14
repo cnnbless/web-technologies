@@ -1,0 +1,47 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+
+}
+
+header{
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    padding: 30px 20px;
+}
+
+.meta{
+    padding: 30px 100px;
+    font-size: 19px;
+}
+.table1{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#zagolovok{
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+}
+p{
+    padding-left: 100px;
+    font-weight: bold;
+}
+ol{
+    padding-left: 150px;
+    padding-right: 300px;
+}
+.prymitka{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.materials{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.questions{
+    padding-left: 100px;
+    padding-right: 100px;
+}
