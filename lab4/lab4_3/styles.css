@@ -1,0 +1,37 @@
+*{
+    font-size: 20px;
+}
+
+ul a {
+    color: violet;
+    text-decoration: none;
+}
+
+.menu > li > a {
+    color: green;
+}
+.submenu{
+    list-style-type: none;
+}
+
+.submenu1 {
+    list-style-type: none;
+}
+
+
+.submenu2 {
+    list-style-type: disc;
+}
+
+.menu ul ul {
+    list-style-type: none;
+}
+
+.different a {
+    text-decoration: none;
+}
+
+
+.different {
+    list-style-position: inside;
+}
